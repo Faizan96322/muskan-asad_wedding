@@ -158,17 +158,6 @@ body{
 }
 
 /* WALIMA small */
-.hero-walima-word{
-  font-family:'Cinzel',serif;
-  font-size:clamp(.65rem,1.8vw,1rem);
-  letter-spacing:.5em;
-  color:var(--sage-dark);
-  text-transform:uppercase;
-  margin-bottom:32px;
-  opacity:0;
-  animation:heroRise .8s ease 3.2s forwards;
-}
-
 .hero-divider{
   display:flex;align-items:center;gap:16px;
   opacity:0;
@@ -181,8 +170,21 @@ body{
 
 .hero-dates{
   opacity:0;
-  animation:heroRise .8s ease 3.6s forwards;
-  display:flex;flex-direction:column;gap:6px;
+  animation:heroRise .8s ease 3.4s forwards;
+  display:flex;flex-direction:column;gap:12px;
+}
+.hero-date-row{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  flex-wrap:wrap;
+}
+.hero-date-label{
+  font-family:'Cinzel',serif;
+  font-size:clamp(.58rem,1.3vw,.75rem);
+  letter-spacing:.35em;
+  color:var(--gold);
+  text-transform:uppercase;
+  min-width:68px;
+  text-align:right;
 }
 .hero-date-item{
   font-family:'Cormorant Garamond',serif;
@@ -642,19 +644,24 @@ footer::before{
   <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
   <div class="hero-wedding-word">Wedding</div>
   <div class="hero-ampersand-names">
-    <span class="hero-name">Muskan</span>
-    <span class="hero-amp">&</span>
     <span class="hero-name">Asad</span>
+    <span class="hero-amp">&</span>
+    <span class="hero-name">Muskan</span>
   </div>
-  <div class="hero-walima-word">✦ &nbsp; Walima · 7th June 2026 &nbsp; ✦</div>
   <div class="hero-divider">
     <div class="hero-divider-line"></div>
     <svg viewBox="0 0 24 24" width="18" height="18" fill="#c9a050"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
     <div class="hero-divider-line r"></div>
   </div>
   <div class="hero-dates">
-    <span class="hero-date-item">4th June 2026 · Rock Gardens, Ballari, Karnataka</span>
-    <span class="hero-date-item" style="font-size:.9em;color:var(--ink-soft)">7th June 2026 · Thanas Party Hall, Chennai</span>
+    <div class="hero-date-row">
+      <span class="hero-date-label">Wedding</span>
+      <span class="hero-date-item">4th June 2026 · Rock Gardens, Ballari, Karnataka</span>
+    </div>
+    <div class="hero-date-row">
+      <span class="hero-date-label">Walima</span>
+      <span class="hero-date-item">7th June 2026 · Thanas Party Hall, Chennai</span>
+    </div>
   </div>
   <div class="hero-scroll">
     <span>Scroll to unfold</span>
